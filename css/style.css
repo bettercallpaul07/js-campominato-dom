@@ -14,11 +14,13 @@ header {
     align-items: center;
 }
 
-
 main {
+    background-color: darkblue;
+}
+
+.container {
     width: 100%;
     height: 90vh;
-    background-color: lightblue;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,10 +37,10 @@ main {
 }
 
 #playButton {
-  background-color: #008CBA;
+  background-color: darkblue;
   border: none;
   color: white;
-  padding: 5px 30px;
+  padding: 5px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -58,12 +60,21 @@ header h1 {
     margin-left: 100px;
 }
 
+.counter {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
 
 
 #grid-container {
     height: 80vh;
     width: 80vh;
-    background-color: lightblue;
+    background-color: darkblue;
+    color: darkblue ;
     display: flex;
     flex-wrap: wrap;
     border: 2px solid white;
@@ -80,10 +91,18 @@ header h1 {
     font-weight: bold;
 } 
 
-#grid-container > .cell.clicked {
+#grid-container > .active {
     background-color: aquamarine;
 
 }
+
+.activebomb {
+    background-color: red;
+}
+
+.bl {
+}
+
 
 footer {
     height: 5vh;
